@@ -1,0 +1,11 @@
+name: Github Actions CI TEST
+
+on: push
+
+jobs:
+  build_to_dev:
+    runs-on: ubuntu-lastest
+
+    steps:
+      -name: Checkout the repo
+      uses: actions/checkout@v1
